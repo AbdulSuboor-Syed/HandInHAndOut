@@ -4,4 +4,4 @@ Solution: (Chandra Bhanu Tata)
 Update database manually through package manager
 
 Issue 2: (Hema Sree Rathnam Machha)
-After cloning repo packages were not installed automatically.  
+After cloning repo packages were not installed automatically. Manual commands are not working.
