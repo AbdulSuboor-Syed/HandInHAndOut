@@ -14,8 +14,7 @@
     justify-content: center;
 }
 
-.typing-demo {
-    font-size:x-large;
+.typing-demo {    
     width: 24ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
@@ -36,4 +35,5 @@
     50% {
         border-color: transparent
     }
-}}
+}
+

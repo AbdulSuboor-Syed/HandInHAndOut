@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "U/7JO83gwVfcmQTYUGSBTc6M8d+hAQNCb5aKY/tPRMXWDKP9cLB8LhQBuHtx4u9F511SgF/glaSgqv9vnvK+WQ==",
+  "dgSpecHash": "7aSF2wFpyIKSowlB/3LAmGrVsmyNrK6DeA3PUJZN8yINHw7S9Gg4dSqAcNvGb1holgXEMZ85mBtLQwHbhqFIXg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\S542047\\Desktop\\Final Project\\HandInHandOut\\HandInHandOut\\HandInHandOut.csproj",
+  "projectFilePath": "C:\\Users\\S542047\\Desktop\\Final project\\HandInHandOut\\HandInHandOut\\HandInHandOut.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\S542047\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\S542047\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

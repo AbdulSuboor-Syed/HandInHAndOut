@@ -28,6 +28,7 @@ namespace HandInHandOut.Controllers
         
         public ViewResult Details(int? id)
         {
+            throw new Exception("Error in Details View");
             Books bookCheck = _booksRepository.GetBooks(id.Value);
             if(bookCheck == null)
             {
@@ -77,6 +78,7 @@ namespace HandInHandOut.Controllers
         {
             return View();
         }
+     
 
 
         [HttpGet]
