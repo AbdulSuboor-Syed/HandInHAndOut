@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿
+@inject SignInManager<IdentityUser> signInManager;
+
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
@@ -43,14 +46,37 @@
             <div class="collapse navbar-collapse" id="illo">
                 <ul class="navbar-nav">
                     <li class="nav-item">
+                        <a asp-action="Welcome" asp-controller="home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
                         <a asp-action="index" asp-controller="home" class="nav-link">List</a>
                     </li>
                     <li class="nav-item">
                         <a asp-action="create" asp-controller="home" class="nav-link">Create</a>
                     </li>
-                    <li class="nav-item">
-                        <a asp-action="LoginPage" asp-controller="home" class="nav-link">Login</a>
-                    </li>
+
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    @if (signInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <form method="post" asp-action="logout" asp-controller="accounts">
+                                <button type="submit" class="nav-link btn btn-link py-0" style="width:auto">
+                                    Logout @User.Identity.Name
+                                </button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a asp-action="register" asp-controller="accounts" class="nav-link">Register</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a asp-action="login" asp-controller="accounts" class="nav-link">Login</a>
+                        </li>
+                    }
                 </ul>
             </div>
 
