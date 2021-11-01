@@ -11,7 +11,6 @@ namespace HandInHandOut.Models
         public SQLBookRepo(AppDbContext context)
         {
             this.context = context;
-
         }
         
         public Books Add(Books book)

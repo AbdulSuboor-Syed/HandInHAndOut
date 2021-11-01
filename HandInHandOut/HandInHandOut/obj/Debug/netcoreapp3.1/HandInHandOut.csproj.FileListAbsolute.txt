@@ -83,3 +83,9 @@ C:\Users\S542047\Desktop\Final Project\HandInHandOut\HandInHandOut\obj\Debug\net
 C:\Users\S542047\Desktop\Final Project\HandInHandOut\HandInHandOut\obj\Debug\netcoreapp3.1\Razor\Views\Home\BookNotFound.cshtml.g.cs
 C:\Users\S542047\Desktop\Final Project\HandInHandOut\HandInHandOut\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NotFound.cshtml.g.cs
 C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Debug\netcoreapp3.1\Razor\Views\Accounts\Register.cshtml.g.cs

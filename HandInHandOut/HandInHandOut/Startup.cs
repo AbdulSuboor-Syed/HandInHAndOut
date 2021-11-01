@@ -2,6 +2,7 @@ using HandInHandOut.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,6 +29,9 @@ namespace HandInHandOut
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(_configuration.GetConnectionString("BooksDBConnection")));
 
 
+            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+            
+            
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddScoped<IBooksRepository,SQLBookRepo>();
         }
@@ -46,7 +50,8 @@ namespace HandInHandOut
             }
            
             app.UseStaticFiles();
-            
+            app.UseAuthentication();
+
             app.UseMvc(routes=>
             {
                 routes.MapRoute("default", "{controller=Home}/{action=Welcome}/{id?}");
