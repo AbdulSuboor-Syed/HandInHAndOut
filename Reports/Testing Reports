@@ -1,1 +1,7 @@
+Email field is working currently in registration and login page.
 
+Password is hidden in the login page and register page.
+
+Confirm password is working hidden correctly in the register page.
+
+Once logged in Registration page and Login Page is hidden and Logout link with email along with User name is shown.
