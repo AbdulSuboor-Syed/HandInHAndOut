@@ -1,7 +1,16 @@
-Chandra Banu Tata: During this sprint I have tested the Login page as well as help resolve problems occurred with the code.
+Chandra Banu Tata
+During this sprint I have tested the Login page as well as help resolve problems occurred with the code.
 Email Format is working as expected and throws an error whenever an incorrect format is given.
 Whenever only email is given and clicked on login it shows an error as password required.
 Password is hidden whenever its typed.
 Whenever invalid email and password are given and clicked on login then an error is given as Invalid login
 Once Login is sucessful with valid credentials the login url is disabled and logout is appeared.
-Hema Sree Rathnam Machha : Issue found when clicked on login without entering password and error is shown but as user enters password the error message is still visible.
+
+Hema Sree Rathnam Machha
+Issue found when clicked on login without entering password and error is shown but as user enters password the error message is still visible.
+
+**Himaja Parachuri-Test Registration Page**
+Email field is working currently in registration page.
+Password is hidden in the  register page.
+Confirm password is working hidden correctly in the register page.
+Once logged in Registration page and Login Page is hidden and Logout link with email along with User name is shown.
