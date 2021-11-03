@@ -2,3 +2,4 @@ Email Format is working as expected and throws an error whenever an incorrect fo
 Whenever only email is given and clicked on login it shows an error as password required.
 Password is hidden whenever its typed.
 Whenever invalid email and password are given and clicked on login then an error is given as Invalid login
+Once Login is sucessful with valid credentials the login url is disabled and logout is appeared.
