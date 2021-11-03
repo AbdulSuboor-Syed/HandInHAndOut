@@ -1,3 +1,4 @@
+Chandra Banu Tata: During this sprint I have tested the Login page as well as help resolve problems occurred with the code.
 Email Format is working as expected and throws an error whenever an incorrect format is given.
 Whenever only email is given and clicked on login it shows an error as password required.
 Password is hidden whenever its typed.
