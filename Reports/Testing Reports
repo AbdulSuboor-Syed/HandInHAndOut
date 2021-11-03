@@ -1,7 +1,4 @@
-Email field is working currently in registration and login page.
-
-Password is hidden in the login page and register page.
-
-Confirm password is working hidden correctly in the register page.
-
-Once logged in Registration page and Login Page is hidden and Logout link with email along with User name is shown.
+Email Format is working as expected and throws an error whenever an incorrect format is given.
+Whenever only email is given and clicked on login it shows an error as password required.
+Password is hidden whenever its typed.
+Whenever invalid email and password are given and clicked on login then an error is given as Invalid login
