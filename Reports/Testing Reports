@@ -6,10 +6,7 @@ Password is hidden whenever its typed.
 Whenever invalid email and password are given and clicked on login then an error is given as Invalid login
 Once Login is sucessful with valid credentials the login url is disabled and logout is appeared.
 
-Hema Sree Rathnam Machha
-Issue found when clicked on login without entering password and error is shown but as user enters password the error message is still visible.
-
-**Himaja Parachuri-Test Registration Page**
+Himaja Parachuri-Test Registration Page
 Email field is working currently in registration page.
 Password is hidden in the  register page.
 Confirm password is working hidden correctly in the register page.
