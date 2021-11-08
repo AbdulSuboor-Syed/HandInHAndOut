@@ -11,3 +11,19 @@ Email field is working currently in registration page.
 Password is hidden in the  register page.
 Confirm password is working hidden correctly in the register page.
 Once logged in Registration page and Login Page is hidden and Logout link with email along with User name is shown.
+
+
+Hema Sree Rathnam Machha:
+Whenever user tries to open List Page they are redirected to Login Page 
+
+When a user clicks on List Page without any login then the user is redirected to login page.
+Email and password are required for the user to able to view List of books.
+Similar login Page validations are applied here like the Email format and Password requirements along with mandatory field validations.
+Once the user logins in sucessfully he would be able to view the list of books available.
+
+Whenever user tries to open Create Page they are redirected to Login Page
+
+When a user clicks on Create Page without any login then the user is redirected to login page.
+Email and password are required for the user to be able to create available books.
+Similar login Page validations are applied here like the Email format and Password requirements along with mandatory field validations.
+Once the user logins in sucessfully he would be able to create the list of books available.
