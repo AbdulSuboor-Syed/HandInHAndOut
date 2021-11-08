@@ -27,3 +27,8 @@ When a user clicks on Create Page without any login then the user is redirected 
 Email and password are required for the user to be able to create available books.
 Similar login Page validations are applied here like the Email format and Password requirements along with mandatory field validations.
 Once the user logins in sucessfully he would be able to create the list of books available.
+
+Himaja Parachuri-Access to Login Page and Registration Page
+There is access to login page and registration page directly whenever user clicks on the register or login.
+User needs to enter their email and create a password to register.
+User can login by entering username and password.
