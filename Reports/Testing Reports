@@ -32,3 +32,11 @@ Himaja Parachuri-Access to Login Page and Registration Page
 There is access to login page and registration page directly whenever user clicks on the register or login.
 User needs to enter their email and create a password to register.
 User can login by entering username and password.
+
+Chandra Banu Tata
+Once a user is logged in they are able to open List Page
+After the user logged in then only they can be able to open the list page and can view the list of available books.
+
+Once a user is logged in they are able to open Registration Page
+When the user logins sucessfully then they are not able to open the registration page.
+The registration page is opened before the login done by the user.
