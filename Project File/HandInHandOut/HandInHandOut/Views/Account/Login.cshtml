@@ -1,43 +1,40 @@
-﻿@model RegisterViewModel
+﻿@model LoginViewModel
 
 @{ 
-    ViewBag.Title = "User Registration";
+    ViewBag.Title = "User Login";
 }
+
 
 <div class="row">
     <div class="col-md-6">
-        <div><img src="~/Images/Signup.jpg" style="width:565px;height:450px;padding-top:10px" /></div>
-
-    </div>
-    <div class="col-md-6">
-        <h1>User Registration</h1>
+        <h1>User Login</h1>
         <form method="post">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
-
                 <label asp-for="Email"></label>
                 <input asp-for="Email" class="form-control" />
                 <span asp-validation-for="Email" class="text-danger"></span>
-
             </div>
 
             <div class="form-group">
-
                 <label asp-for="Password"></label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
-
             </div>
 
-
-            <div class="form-group" style="padding-bottom:10px">
-
-                <label asp-for="ConfirmPassword"></label>
-                <input asp-for="ConfirmPassword" class="form-control" />
-                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-
+            <div class="form-group">
+                <div class="form-check" style="margin-left:-25px">
+                    <label asp-for="RemeberMe">
+                        <input asp-for="RemeberMe" />
+                        @Html.DisplayNameFor(m => m.RemeberMe)
+                    </label>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary" style="width:100px" >Register</button>
+            <button type ="submit" class="btn btn-primary">Login</button> 
         </form>
     </div>
-</div>
+
+    <div class="col-md-6">
+        <div><img src="~/Images/Login.jpg" style="width:546px" /></div>
+
+    </div>

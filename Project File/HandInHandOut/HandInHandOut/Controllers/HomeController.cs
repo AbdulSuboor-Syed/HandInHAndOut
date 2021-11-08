@@ -1,5 +1,6 @@
 ﻿using HandInHandOut.Models;
 using HandInHandOut.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace HandInHandOut.Controllers
 {    
+    
     public class HomeController:Controller
     {
         private readonly IBooksRepository _booksRepository;
@@ -45,12 +47,14 @@ namespace HandInHandOut.Controllers
         }
 
         [HttpGet]
+        
         public ViewResult Create()
         {
             return View();
         }
 
         [HttpPost]
+        
         public IActionResult Create(BookCreateViewModel model)
         {
             if (ModelState.IsValid)
@@ -73,6 +77,8 @@ namespace HandInHandOut.Controllers
             return View();
         }
 
+   
+        [AllowAnonymous]
         public ViewResult Welcome()
         {
             return View();
@@ -81,7 +87,7 @@ namespace HandInHandOut.Controllers
 
 
         [HttpGet]
-        public ViewResult Edit(int id)
+                public ViewResult Edit(int id)
         {
             Books book = _booksRepository.GetBooks(id);
             BookEditViewModel booksEditViewModel = new BookEditViewModel
@@ -101,6 +107,7 @@ namespace HandInHandOut.Controllers
 
 
         [HttpPost]
+        
         public IActionResult Edit(BookEditViewModel model)
         {
             if (ModelState.IsValid)

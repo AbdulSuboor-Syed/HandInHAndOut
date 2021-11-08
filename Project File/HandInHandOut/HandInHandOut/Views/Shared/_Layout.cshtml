@@ -60,7 +60,7 @@
                     @if (signInManager.IsSignedIn(User))
                     {
                         <li class="nav-item">
-                            <form method="post" asp-action="logout" asp-controller="accounts">
+                            <form method="post" asp-action="logout" asp-controller="account">
                                 <button type="submit" class="nav-link btn btn-link py-0" style="width:auto">
                                     Logout @User.Identity.Name
                                 </button>
@@ -70,11 +70,11 @@
                     else
                     {
                         <li class="nav-item">
-                            <a asp-action="register" asp-controller="accounts" class="nav-link">Register</a>
+                            <a asp-action="register" asp-controller="account" class="nav-link">Register</a>
                         </li>
 
                         <li class="nav-item">
-                            <a asp-action="login" asp-controller="accounts" class="nav-link">Login</a>
+                            <a asp-action="login" asp-controller="account" class="nav-link">Login</a>
                         </li>
                     }
                 </ul>

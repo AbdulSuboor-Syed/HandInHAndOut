@@ -1,4 +1,5 @@
 ﻿using HandInHandOut.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -8,18 +9,18 @@ using System.Threading.Tasks;
 
 namespace HandInHandOut.Controllers
 {
-    public class AccountsController : Controller
+    public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> userManager;
         private readonly SignInManager<IdentityUser> signInManager;
 
-        public AccountsController(UserManager<IdentityUser> userManager , SignInManager<IdentityUser> signInManager)
+        public AccountController(UserManager<IdentityUser> userManager , SignInManager<IdentityUser> signInManager)
         {
             this.userManager = userManager;
             this.signInManager = signInManager;
         }
 
-        [HttpPost]
+        [HttpPost]        
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
@@ -27,6 +28,7 @@ namespace HandInHandOut.Controllers
         } 
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Register()
         {
             return View();
@@ -34,6 +36,7 @@ namespace HandInHandOut.Controllers
 
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
             if (ModelState.IsValid)
@@ -57,6 +60,7 @@ namespace HandInHandOut.Controllers
 
 
         [HttpGet]
+        [AllowAnonymous]
         public IActionResult Login()
         {
             return View();
@@ -64,6 +68,7 @@ namespace HandInHandOut.Controllers
 
 
         [HttpPost]
+        [AllowAnonymous]
         public async Task<IActionResult> Login(LoginViewModel model)
         {
             if (ModelState.IsValid)

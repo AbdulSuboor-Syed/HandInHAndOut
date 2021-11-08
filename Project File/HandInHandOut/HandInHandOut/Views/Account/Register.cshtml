@@ -1,14 +1,16 @@
-﻿@model LoginViewModel
+﻿@model RegisterViewModel
 
 @{ 
-    ViewBag.Title = "User Login";
+    ViewBag.Title = "User Registration";
 }
-
-
 
 <div class="row">
     <div class="col-md-6">
-        <h1>User Login</h1>
+        <div><img src="~/Images/Signup.jpg" style="width:565px;height:500px" /></div>
+
+    </div>
+    <div class="col-md-6">
+        <h1>User Registration</h1>
         <form method="post">
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
@@ -27,20 +29,15 @@
 
             </div>
 
-            <div class="form-group">
 
-                <div class="form-check" style="margin-left:-25px">
-                    <label asp-for="RemeberMe">
-                        <input asp-for="RemeberMe" />
-                        @Html.DisplayNameFor(m => m.RemeberMe)
-                    </label>
-                </div>
+            <div class="form-group" style="padding-bottom:10px">
+
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+
             </div>
-            <button type ="submit" class="btn btn-primary">Login</button> 
+            <button type="submit" class="btn btn-primary" style="width:100px" >Register</button>
         </form>
     </div>
-
-    <div class="col-md-6">
-        <div><img src="~/Images/Login.jpg" style="width:520px;padding-top:10px" /></div>
-
-    </div>
+</div>
