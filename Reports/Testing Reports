@@ -46,3 +46,9 @@ Himaja Parachuri-Testing Registration Page after styling
 User is able to open the Registration Page after the styling and able to register with the user details.
 User is able to register by entering the email and password.
 Password is hidden while entering in the registration page.
+
+
+Chandra Bhanu Tata -Testing Login Page after styling
+Login Page opens successfully when the user enter the email and password.
+User is able to login after styling in the login page.
+Password is hidden after styling in the login page.
