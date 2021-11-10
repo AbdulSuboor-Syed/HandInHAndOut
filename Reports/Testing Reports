@@ -40,3 +40,9 @@ After the user logged in then only they can be able to open the list page and ca
 Once a user is logged in they are able to open Registration Page
 When the user logins sucessfully then they are not able to open the registration page.
 The registration page is opened before the login done by the user.
+
+
+Himaja Parachuri-Testing Registration Page after styling
+User is able to open the Registration Page after the styling and able to register with the user details.
+User is able to register by entering the email and password.
+Password is hidden while entering in the registration page.
