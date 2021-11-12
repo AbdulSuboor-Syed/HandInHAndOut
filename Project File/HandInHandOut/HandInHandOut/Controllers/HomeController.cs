@@ -21,13 +21,16 @@ namespace HandInHandOut.Controllers
             _booksRepository = booksRepository;
             this.hostingEnvironment = hostingEnvironment;
         }
-        
+
+
+        [Authorize]
         public ViewResult Index()
         {
             var model = _booksRepository.GetAllBooks();
                 return View(model);
         }
-        
+
+        [Authorize]
         public ViewResult Details(int? id)
         {            
             Books bookCheck = _booksRepository.GetBooks(id.Value);
@@ -47,14 +50,14 @@ namespace HandInHandOut.Controllers
         }
 
         [HttpGet]
-        
+        [Authorize]
         public ViewResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        
+        [Authorize]
         public IActionResult Create(BookCreateViewModel model)
         {
             if (ModelState.IsValid)
@@ -87,7 +90,8 @@ namespace HandInHandOut.Controllers
 
 
         [HttpGet]
-                public ViewResult Edit(int id)
+        [Authorize]
+        public ViewResult Edit(int id)
         {
             Books book = _booksRepository.GetBooks(id);
             BookEditViewModel booksEditViewModel = new BookEditViewModel
@@ -107,7 +111,7 @@ namespace HandInHandOut.Controllers
 
 
         [HttpPost]
-        
+        [Authorize]
         public IActionResult Edit(BookEditViewModel model)
         {
             if (ModelState.IsValid)

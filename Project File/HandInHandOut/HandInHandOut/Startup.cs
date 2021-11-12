@@ -32,14 +32,7 @@ namespace HandInHandOut
 
 
             services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
-
-
-            services.AddMvc(options =>
-            {
-                var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
-                options.Filters.Add(new AuthorizeFilter(policy));
-            }
-                ).AddXmlSerializerFormatters();
+            
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddScoped<IBooksRepository,SQLBookRepo>();
         }
