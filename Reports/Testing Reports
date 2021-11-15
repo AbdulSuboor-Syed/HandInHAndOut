@@ -57,3 +57,11 @@ Himaja Parachuri-Testing User Redirection After Login
 User is redirected to the page they have selected before login when they try to open the create or list tabs.
 Testing Remote validation 
 The remote validation is Working Correctly on Registration Page.
+
+Hema Sree Rathnam Machha
+User is redirected after Login to List Page
+- After loading the Home URL when user clicks on List Tab in the home page without any user login it will be redirected to Login Page.
+User is redirected after Login to Create Page
+- After loading the Home URL when user clicks on Create Tab in the home page without any user login it will be redirected to Login Page.
+
+
