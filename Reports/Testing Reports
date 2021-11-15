@@ -64,4 +64,11 @@ User is redirected after Login to List Page
 User is redirected after Login to Create Page
 - After loading the Home URL when user clicks on Create Tab in the home page without any user login it will be redirected to Login Page.
 
-
+Chandra Bhanu Tata:
+Works Correctly on Login Page
+- The remote validation is Working Correctly on Login Page.
+Once user clicks on Register any validations that are required that do not meet should disappear as they fulfill the requirement
+- when registration is done with email,password and confirm password.Errors are displayed.
+- When Incorrect email format is given.Error is shown to give correct format.
+- When password and confirm password entered format is not as per validation error is shown.
+- For the above two step error the Register button is disabled as long as valid data is entered.
