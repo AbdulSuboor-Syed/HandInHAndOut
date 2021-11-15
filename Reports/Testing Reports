@@ -52,3 +52,8 @@ Chandra Bhanu Tata -Testing Login Page after styling
 Login Page opens successfully when the user enter the email and password.
 User is able to login after styling in the login page.
 Password is hidden after styling in the login page.
+
+Himaja Parachuri-Testing User Redirection After Login 
+User is redirected to the page they have selected before login when they try to open the create or list tabs.
+Testing Remote validation 
+The remote validation is Working Correctly on Registration Page.
