@@ -15,7 +15,7 @@
                     <div class="row">
                         <div class="col-md-9 col-lg-8 mx-auto">
                             <h3 class="login-heading mb-4">Welcome To Our Website</h3>
-                            
+
                             <form method="post">
                                 <div asp-validation-summary="All" class="text-danger"></div>
                                 <div class="form-group">
@@ -44,6 +44,12 @@
                                 </div>
                                 <button type="submit" class="btn btn-primary" style="width:100px">Register</button>
                             </form>
+                            <p>Passwords must be at least 6 characters.</p>
+                            <p>Passwords must have at least one non alphanumeric character.</p>
+                            <p>Passwords must have at least one digit ('0'-'9').</p>
+                            <p>Passwords must have at least one uppercase ('A'-'Z').</p>
+
+
                         </div>
                     </div>
                 </div>

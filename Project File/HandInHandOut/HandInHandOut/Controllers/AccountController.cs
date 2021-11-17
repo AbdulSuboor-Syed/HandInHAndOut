@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace HandInHandOut.Controllers
 {
     public class AccountController : Controller
@@ -34,10 +35,10 @@ namespace HandInHandOut.Controllers
             return View();
         }
 
-       [HttpGet]
+       [HttpGet][HttpPost]
        [AllowAnonymous]
         public async Task<IActionResult> IsEmailInUse(string email)
-        {
+        {            
             var user = await userManager.FindByEmailAsync(email);
             if(user == null)
             {
