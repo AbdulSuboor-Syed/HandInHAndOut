@@ -1,4 +1,5 @@
 ﻿
+using HandInHandOut.Utilities;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,8 @@ namespace HandInHandOut.ViewModels
     public class RegisterViewModel
     {
         [Required]
-        [EmailAddress]        
+        [EmailAddress]
+        [ValidEmailDomain(allowedDomain:"gmail.com",ErrorMessage = "Email domain must be gmail.com")]
         public string Email { get; set; }
 
         [Required]
