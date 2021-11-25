@@ -31,7 +31,7 @@ namespace HandInHandOut
             services.AddDbContext<AppDbContext>(options => options.UseSqlServer(_configuration.GetConnectionString("BooksDBConnection")));
 
 
-            services.AddIdentity<IdentityUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+            services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<AppDbContext>();
             
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddScoped<IBooksRepository,SQLBookRepo>();

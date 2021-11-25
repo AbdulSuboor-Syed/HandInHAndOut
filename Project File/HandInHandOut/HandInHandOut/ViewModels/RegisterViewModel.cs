@@ -24,5 +24,13 @@ namespace HandInHandOut.ViewModels
         [Display(Name = "Confirm Password")]
         [Compare("Password", ErrorMessage = "Password and confirmation password do not match")]
         public string ConfirmPassword { get; set; }
+       
+
+        public string City { get; set; }
+
+        public string AdressLine1 { get; set; }
+        public string AdressLine2 { get; set; }
+
+        public string State { get; set; }
     }
 }
