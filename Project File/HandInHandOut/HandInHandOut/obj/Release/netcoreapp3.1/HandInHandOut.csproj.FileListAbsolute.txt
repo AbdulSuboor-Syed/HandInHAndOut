@@ -87,6 +87,9 @@ C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\bin\Release\n
 C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\bin\Release\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Release\netcoreapp3.1\Razor\Views\Accounts\Login.cshtml.g.cs
-C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Release\netcoreapp3.1\Razor\Views\Accounts\Register.cshtml.g.cs
 C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Release\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Release\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Release\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Release\netcoreapp3.1\Razor\Views\Administration\CreateRole.cshtml.g.cs
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Release\netcoreapp3.1\Razor\Views\Administration\EditRole.cshtml.g.cs
+C:\Users\S542047\Desktop\Final project\HandInHandOut\HandInHandOut\obj\Release\netcoreapp3.1\Razor\Views\Administration\ListRoles.cshtml.g.cs

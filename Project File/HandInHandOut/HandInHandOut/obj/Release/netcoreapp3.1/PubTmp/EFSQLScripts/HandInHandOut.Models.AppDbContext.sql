@@ -234,3 +234,53 @@ GO
 COMMIT;
 GO
 
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20211123145431_Extend_IdentityUser')
+BEGIN
+    ALTER TABLE [AspNetUsers] ADD [AddressLine1] nvarchar(max) NULL;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20211123145431_Extend_IdentityUser')
+BEGIN
+    ALTER TABLE [AspNetUsers] ADD [AddressLine2] nvarchar(max) NULL;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20211123145431_Extend_IdentityUser')
+BEGIN
+    ALTER TABLE [AspNetUsers] ADD [City] nvarchar(max) NULL;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20211123145431_Extend_IdentityUser')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20211123145431_Extend_IdentityUser', N'5.0.11');
+END;
+GO
+
+COMMIT;
+GO
+
+BEGIN TRANSACTION;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20211123150730_State_Migration')
+BEGIN
+    ALTER TABLE [AspNetUsers] ADD [State] nvarchar(max) NULL;
+END;
+GO
+
+IF NOT EXISTS(SELECT * FROM [__EFMigrationsHistory] WHERE [MigrationId] = N'20211123150730_State_Migration')
+BEGIN
+    INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+    VALUES (N'20211123150730_State_Migration', N'5.0.11');
+END;
+GO
+
+COMMIT;
+GO
+
