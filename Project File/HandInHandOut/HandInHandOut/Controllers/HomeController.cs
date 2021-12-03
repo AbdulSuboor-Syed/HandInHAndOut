@@ -23,14 +23,14 @@ namespace HandInHandOut.Controllers
         }
 
 
-        [Authorize]
+        [Authorize(Roles ="Admin")]
         public ViewResult Index()
         {
             var model = _booksRepository.GetAllBooks();
                 return View(model);
         }
 
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public ViewResult Details(int? id)
         {            
             Books bookCheck = _booksRepository.GetBooks(id.Value);
@@ -50,14 +50,14 @@ namespace HandInHandOut.Controllers
         }
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public ViewResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IActionResult Create(BookCreateViewModel model)
         {
             if (ModelState.IsValid)
@@ -90,7 +90,7 @@ namespace HandInHandOut.Controllers
 
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public ViewResult Edit(int id)
         {
             Books book = _booksRepository.GetBooks(id);
@@ -111,7 +111,7 @@ namespace HandInHandOut.Controllers
 
 
         [HttpPost]
-        [Authorize]
+        [Authorize(Roles = "Admin")]
         public IActionResult Edit(BookEditViewModel model)
         {
             if (ModelState.IsValid)
