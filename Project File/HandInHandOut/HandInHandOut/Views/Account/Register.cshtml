@@ -1,107 +1,104 @@
 ﻿@model RegisterViewModel
 
-@{
+@{ 
     ViewBag.Title = "User Registration";
 }
 
 <div class="container-fluid ps-md-0">
     <div class="row g-0">
-        <div class="login d-flex align-items-center py-5">
-            <div class="d-none d-md-flex col-md-4 col-lg-6 ">
-                <div>
-                    <div class="card" >
-                        <img class="card-img-top" src="~/Images/email.jpg" alt="Card image cap" width="300" height="300">
-                    </div>
-                    <div class="card">
-                        <h4>Password Requirement</h4>
-                        <li>Passwords must be at least 6 characters.</li>
-                        <li>Passwords must have at least one non alphanumeric character.</li>
-                        <li>Passwords must have at least one digit ('0'-'9').</li>
-                        <li>Passwords must have at least one uppercase ('A'-'Z').</li>
-                        <br /><br /><br />
-                    </div>
+        <div class="d-none d-md-flex col-md-4 col-lg-6 ">
+            
+            <div class="card">
+                <div class="card-header">
+
                 </div>
-                <div>
-                    <div class="card">
-                        <h3>Email Requirement</h3>
-                        <li>Email must be gmail</li>
-                        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                    </div>
-                    <div class="card">
-                        <img class="card-img-top" src="~/Images/password.jpg" alt="Card image cap" width="300" height="300">
-                    </div>
+                <div class="card-body">
+
+                </div>
+
+                <div class="card-footer">
+
+
                 </div>
             </div>
-            <div class="col-md-8 col-lg-6">
-              <!-- <div class="login d-flex align-items-center py-5"> -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-9 col-lg-8 mx-auto">
-                                <h3 class="login-heading mb-4">Welcome To Our Website</h3>
 
-                                <form method="post">
-                                    <div asp-validation-summary="All" class="text-danger"></div>
-                                    <div class="form-group">
+        </div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <h3 class="login-heading mb-4">Welcome To Our Website</h3>
 
-                                        <label asp-for="Email"></label>
-                                        <input asp-for="Email" class="form-control" />
-                                        <span asp-validation-for="Email" class="text-danger"></span>
+                            <form method="post">
+                                <div asp-validation-summary="All" class="text-danger"></div>
+                                <div class="form-group">
 
-                                    </div>
+                                    <label asp-for="Email"></label>
+                                    <input asp-for="Email" class="form-control" />
+                                    <span asp-validation-for="Email" class="text-danger"></span>
 
-                                    <div class="form-group">
+                                </div>
 
-                                        <label asp-for="Password"></label>
-                                        <input asp-for="Password" class="form-control" />
-                                        <span asp-validation-for="Password" class="text-danger"></span>
+                                <div class="form-group">
 
-                                    </div>
+                                    <label asp-for="Password"></label>
+                                    <input asp-for="Password" class="form-control" />
+                                    <span asp-validation-for="Password" class="text-danger"></span>
 
-
-                                    <div class="form-group" style="padding-bottom:10px">
-
-                                        <label asp-for="ConfirmPassword"></label>
-                                        <input asp-for="ConfirmPassword" class="form-control" />
-                                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
-
-                                    </div>
+                                </div>
 
 
-                                    <div class="form-group">
+                                <div class="form-group" style="padding-bottom:10px">
 
-                                        <label asp-for="AdressLine1">Address Line 1</label>
-                                        <input asp-for="AdressLine1" class="form-control" />
+                                    <label asp-for="ConfirmPassword"></label>
+                                    <input asp-for="ConfirmPassword" class="form-control" />
+                                    <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
 
-                                    </div>
+                                </div>
 
-                                    <div class="form-group">
 
-                                        <label asp-for="AdressLine2">Address Line 2</label>
-                                        <input asp-for="AdressLine2" class="form-control" />
+                                <div class="form-group">
 
-                                    </div>
+                                    <label asp-for="AdressLine1">Address Line 1</label>
+                                    <input asp-for="AdressLine1" class="form-control" />
 
-                                    <div class="form-group">
+                                </div>
 
-                                        <label asp-for="City"></label>
-                                        <input asp-for="City" class="form-control" />
+                                <div class="form-group">
 
-                                    </div>
+                                    <label asp-for="AdressLine2">Address Line 2</label>
+                                    <input asp-for="AdressLine2" class="form-control" />
 
-                                    <div class="form-group">
+                                </div>
 
-                                        <label asp-for="State"></label>
-                                        <input asp-for="State" class="form-control" />
+                                <div class="form-group">
 
-                                    </div>
+                                    <label asp-for="City"></label>
+                                    <input asp-for="City" class="form-control" />
 
-                                    <br />
-                                    <button type="submit" class="btn btn-primary" style="width:100px">Register</button>
-                                </form>
-                            </div>
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label asp-for="State"></label>
+                                    <input asp-for="State" class="form-control" />
+
+                                </div>
+
+
+                                <button type="submit" class="btn btn-primary" style="width:100px">Register</button>
+                            </form>
+                            <p>Passwords must be at least 6 characters.</p>
+                            <p>Passwords must have at least one non alphanumeric character.</p>
+                            <p>Passwords must have at least one digit ('0'-'9').</p>
+                            <p>Passwords must have at least one uppercase ('A'-'Z').</p>
+
+
                         </div>
                     </div>
                 </div>
-         <!--   </div> -->
+            </div>
         </div>
     </div>
+</div>
